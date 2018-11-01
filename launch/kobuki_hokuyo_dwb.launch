@@ -16,7 +16,7 @@
     <rosparam file="$(find kobuki_2dnav_sim)/param/costmap_common_params.yaml" command="load" ns="local_costmap" />
     <rosparam file="$(find kobuki_2dnav_sim)/param/local_costmap_params.yaml" command="load" />
     <rosparam file="$(find kobuki_2dnav_sim)/param/global_costmap_params.yaml" command="load" />
-    <rosparam file="$(find kobuki_2dnav_sim)/param/base_local_planner_params.yaml" command="load" />
+    <rosparam file="$(find kobuki_2dnav_sim)/param/base_local_planner_params_dwb.yaml" command="load" />
     <remap from="/cmd_vel" to="/mobile_base/commands/velocity" />
   </node>
   <node pkg="rviz" type="rviz" name="rviz" args="-d $(find kobuki_2dnav_sim)/nav.rviz" />
